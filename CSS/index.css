@@ -250,3 +250,12 @@
 	position: relative;
 	top: 418px;
 }
+
+
+/* advt banner */
+
+
+.advt{
+	background-color: red;
+	height: 1000px;
+}
