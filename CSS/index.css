@@ -1,7 +1,69 @@
-:root{
-    --primary-red-color :  #FF2600;
-    --primary-text-color : #222222;
-    --secondary-text-color : #C7C7C7;
-    --secondary-color : #EFEFEF;
-    --border-color : #C7C7C7;
+:root {
+	--primary-red-color: #ff2600;
+	--primary-text-color: #222222;
+	--secondary-text-color: #c7c7c7;
+	--secondary-color: #efefef;
+	--border-color: #c7c7c7;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Poppins", sans-serif;
+}
+
+.header {
+	height: 96px;
+}
+
+.container {
+	width: 1170px;
+	margin: auto;
+}
+
+
+.logosection {
+	float: left;
+	margin: 17px auto;
+}
+
+.navsection {
+	float: right;
+	margin: 36px auto;
+}
+
+
+.headercontainer::after {
+    content: "";
+    display: block;
+	clear: both;
+}
+
+.navbaritems {
+	list-style: none;
+	float: left;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navlinks {
+	text-decoration: none;
+	margin: auto 10px;
+	color: var(--border-color);
+    letter-spacing: 0px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.active {
+	color: var(--primary-text-color);
+    text-decoration: underline;
+}
+
+.contact{
+    margin-right: 0px;
 }
