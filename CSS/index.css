@@ -18,7 +18,7 @@
 	height: 96px;
 	position: fixed;
 	z-index: 20;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	width: 100%;
 }
 
@@ -74,18 +74,17 @@
 
 /* banner */
 
-.banner{
+.banner {
 	height: 717px;
+	padding-top: 96px;
 }
 
-.bannerfirstpart{
+.bannerfirstpart {
 	height: 620px;
 	background-color: var(--secondary-color);
 }
 
-
-
-.bannerhead{
+.bannerhead {
 	margin-bottom: 20px;
 	font-weight: 900;
 	font-size: 50px;
@@ -93,7 +92,7 @@
 	color: var(--primary-text-color);
 }
 
-.bannerinfo{
+.bannerinfo {
 	margin-bottom: 60px;
 	font-weight: 300;
 	font-size: 16px;
@@ -101,7 +100,7 @@
 	color: var(--primary-text-color);
 }
 
-.bannerbtn{
+.bannerbtn {
 	font-weight: 300;
 	font-size: 18px;
 	letter-spacing: 0px;
@@ -110,7 +109,7 @@
 	height: 26px;
 }
 
-.bannerbtnborder{
+.bannerbtnborder {
 	width: 96px;
 	height: 10px;
 	background-color: var(--primary-red-color);
@@ -118,13 +117,136 @@
 	margin: -10px 0 0 0;
 }
 
-.bannerinfosection{
+.bannerinfosection {
 	padding: 215px 0px;
 	width: 530px;
 }
 
-.bannerimgsection{
+.bannerimgsection {
 	position: absolute;
 	top: 96px;
 	right: 0;
+}
+
+/* categories */
+
+.catsection {
+	margin-top: 60px;
+}
+
+.catnavsection {
+	margin-bottom: 50px;
+}
+
+.card {
+	display: inline-block;
+	width: 350px;
+	margin-right: 55px;
+}
+
+.cardimgsection {
+	display: inline-block;
+	margin-right: 22px;
+}
+
+.lastcard {
+	margin-right: 0px;
+}
+
+.first {
+	margin-left: 0px;
+}
+
+.cardinfo {
+	margin-left: 20px;
+}
+
+.firstcard {
+	background-image: url("../images/product_01.png");
+	width: 350px;
+	height: 450px;
+}
+
+.secondcard {
+	background-image: url("../images/product_02.png");
+	width: 350px;
+	height: 450px;
+}
+
+.lastcardimg {
+	background-image: url("../images/product_03.png");
+	width: 350px;
+	height: 450px;
+	/* margin: 7px; */
+	margin-right: 0px;
+}
+
+.infoonimg {
+	width: 350px;
+	height: 450px;
+	background-color: var(--primary-text-color);
+	opacity: 0.8;
+	color: #ffffff;
+	margin-top: -33px;
+}
+
+.imghead {
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	padding: 20px;
+}
+
+.imginfo {
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	padding: 20px;
+}
+
+.cardname {
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+	margin-top: 20px;
+}
+
+.cardprice {
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+}
+
+.catnavlinks {
+	font-size: 18px;
+}
+
+.imglabel{
+	position: relative;
+	top: 420px;
+	left: 20px;
+	background-color: #FFFFFF;
+	width: 73px;
+	height: 30px;
+}
+
+.label{
+	text-align: center;
+	letter-spacing: 0px;
+	font-size: 14px;
+	font-weight: 300;
+	color: var(--primary-text-color);
+	padding: 6px 0px;
+}
+
+.cardline{
+	width: 350px;
+	background-color:var(--primary-text-color);
+	height: 2px;
+	position: relative;
+	top: 418px;
 }
