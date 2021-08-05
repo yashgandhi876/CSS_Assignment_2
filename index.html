@@ -18,17 +18,17 @@
 	<body>
 		<!-- header -->
 
-		<header class="header">
+		<header id="home" class="header">
 			<div class="container headercontainer">
 				<div class="logosection">
 					<img class="logo" src="./images/logo.png" alt="logo" />
 				</div>
 				<nav class="navsection">
 					<ul class="navbar">
-						<li class="navbaritems"><a class="navlinks active" href="#">Home</a></li>
-						<li class="navbaritems"><a class="navlinks" href="#">Product</a></li>
-						<li class="navbaritems"><a class="navlinks" href="#">Blog</a></li>
-						<li class="navbaritems"><a class="navlinks contact" href="#">Contact</a></li>
+						<li class="navbaritems"><a class="navlinks active" href="#home">Home</a></li>
+						<li class="navbaritems"><a class="navlinks" href="#product">Product</a></li>
+						<li class="navbaritems"><a class="navlinks" href="#blog">Blog</a></li>
+						<li class="navbaritems"><a class="navlinks contact" href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -36,7 +36,7 @@
 
 		<!-- Banner -->
 
-		<section class="banner">
+		<section id="product" class="banner">
 			<div class="bannerfirstpart">
 				<div class="container bannercontainer">
 					<div class="bannerinfosection">
@@ -223,7 +223,7 @@
 
 		<!-- newsletter -->
 
-		<section class="newsletter">
+		<section id="contact" class="newsletter">
 			<div class="content">
 				<div class="container">
 					<div class="subscribesection">
@@ -252,10 +252,10 @@
 
 		<!-- article -->
 
-		<section class="article">
+		<section id="blog" class="article">
 			<div class="container article_container">
 				<div class="article_card">
-					<div class="artocle_imgsection">
+					<div class="article_imgsection">
 						<div class="article_border"></div>
 						<img src="./images/gallery_1.png" alt="gallary one" />
 					</div>
@@ -270,7 +270,7 @@
 				</div>
 
 				<div class="article_card">
-					<div class="artocle_imgsection">
+					<div class="article_imgsection">
 						<div class="article_border"></div>
 						<img src="./images/gallery_2.png" alt="gallary one" />
 					</div>
@@ -285,7 +285,7 @@
 				</div>
 
 				<div class="article_card lastarticle_card">
-					<div class="artocle_imgsection">
+					<div class="article_imgsection">
 						<div class="article_border"></div>
 						<img src="./images/gallery_3.png" alt="gallary one" />
 					</div>
@@ -366,5 +366,26 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- footer -->
+
+		<footer class="footer">
+			<div class="container footer_container">
+				<div class="copyright">
+					<p class="copy">
+						Copyright © 2019 Sello all rights reserved.
+					</p>
+				</div>
+
+				<div class="footerlinkssection">
+					<ul class="footer_ul">
+						<li class="listitem footerlistitem"><a class="link footerlink" href="#home">Home</a></li>
+						<li class="listitem footerlistitem"><a class="link footerlink" href="#product">Product</a></li>
+						<li class="listitem footerlistitem"><a class="link footerlink" href="#blog">Blog</a></li>
+						<li class="listitem footerlistitem"><a class="link footerlink" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
