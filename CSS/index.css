@@ -228,16 +228,16 @@
 	font-size: 18px;
 }
 
-.imglabel{
+.imglabel {
 	position: relative;
 	top: 420px;
 	left: 20px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	width: 73px;
 	height: 30px;
 }
 
-.label{
+.label {
 	text-align: center;
 	letter-spacing: 0px;
 	font-size: 14px;
@@ -246,82 +246,80 @@
 	padding: 6px 0px;
 }
 
-.cardline{
+.cardline {
 	width: 350px;
-	background-color:var(--primary-text-color);
+	background-color: var(--primary-text-color);
 	height: 2px;
 	position: relative;
 	top: 418px;
 }
 
-
 /* advt banner */
 
-.advtbanner{
+.advtbanner {
 	margin-top: 120px;
 }
 
-.advtcontainer{
+.advtcontainer {
 	position: relative;
 }
 
-.advtimginfo{
+.advtimginfo {
 	position: absolute;
 	top: 96px;
 	left: 260px;
 }
 
-.advtbtnsection{
+.advtbtnsection {
 	margin-top: 30px;
 }
 
-.sale{
+.sale {
 	font-weight: 300;
 	font-size: 16px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
 }
 
-.off{
+.off {
 	font-size: 24px;
 	font-weight: 600;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
 }
 
-.sectionone{
+.sectionone {
 	float: left;
 }
 
-.sectiontwo{
+.sectiontwo {
 	float: right;
 }
 
-.advtcontainer::after{
+.advtcontainer::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.sectiontwo{
+.sectiontwo {
 	position: relative;
 }
 
-.advtimginfo2{
+.advtimginfo2 {
 	position: absolute;
 	top: 96px;
 	left: 65px;
-
 }
 
-.sale2{
+.sale2 {
 	font-weight: 300;
 	font-size: 16px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
 }
 
-.off2{
+.off2 {
 	font-weight: 600;
 	font-family: 24px;
 	letter-spacing: 0px;
@@ -329,79 +327,76 @@
 	margin-bottom: 30px;
 }
 
-
 /* cards */
 
-
-.cards_cardssections{
+.cards_cardssections {
 	margin-top: 120px;
 }
 
-.cards_card{
+.cards_card {
 	width: 350px;
 	display: inline-block;
 	border: 1px solid var(--secondary-text-color);
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	margin-right: 48px;
 }
 
-.cards_lastcard{
+.cards_lastcard {
 	margin-right: 0px;
 	float: right;
 }
 
-.cards_cardinfo{
+.cards_cardinfo {
 	margin-top: 20px;
 }
 
-.cards_cardname{
+.cards_cardname {
 	font-weight: 500;
 	font-size: 24px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
 }
 
-.cards_cardprice{
+.cards_cardprice {
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
-
 }
 
-.cards_breakline{
+.cards_breakline {
 	border-bottom: 1px solid var(--secondary-text-color);
 	width: 310px;
 	margin: 10px 0 13px 0;
 }
 
-.cards_tag{
+.cards_tag {
 	font-size: 10px;
 	font-weight: 300;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
 }
 
-.cards_tags{
+.cards_tags {
 	margin-bottom: 20px;
 }
 
-.cards_tag1{
+.cards_tag1 {
 	/* margin-left: 21px; */
 }
-.cards_tag2{
+.cards_tag2 {
 	margin-left: 49px;
 }
 
-.cards_cart{
+.cards_cart {
 	margin-left: 155px;
 }
 
-.cards_cardsecondpart{
+.cards_cardsecondpart {
 	margin-left: 20px;
 }
 
-.cards_cardprice2{
+.cards_cardprice2 {
 	text-decoration: line-through;
 	font-size: 10px;
 	font-weight: 300;
@@ -409,11 +404,11 @@
 	letter-spacing: 0px;
 }
 
-.cards_cardimg{
+.cards_cardimg {
 	position: relative;
 }
 
-.cards_offer{
+.cards_offer {
 	position: absolute;
 	top: 20px;
 	left: 257px;
@@ -422,17 +417,100 @@
 	height: 30px;
 }
 
-.cards_offerinfo{
+.cards_offerinfo {
 	text-align: center;
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 0px;
-	color: #FFFFFF;
+	color: #ffffff;
 	margin: 5px auto;
 }
 
-.cards_container::after{
+.cards_container::after {
 	content: "";
 	display: block;
 	clear: both;
+}
+
+/* newsletter */
+
+.newsletter {
+	margin-top: 305px;
+}
+
+.content{
+	position: relative;
+}
+
+.newletterimgsection {
+	margin-left: 155px;
+	position: absolute;
+	top: -185px;
+}
+
+.content {
+	background-color: var(--secondary-color);
+}
+
+.subscribeheading {
+	padding-top: 60px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+}
+
+.now {
+	font-weight: 300;
+}
+
+.subscribeinfo {
+	padding-top: 10px;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+	text-align: center;
+}
+
+.subscribeinput {
+	padding-top: 41px;
+	padding-bottom: 60px;
+}
+
+.subscribeemailinputbox {
+	background-color: #fff;
+	border: none;
+	outline: none;
+	width: 350px;
+	height: 50px;
+	padding: 15px 30px;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	color: var(--border-color);
+	margin-left: -10px;
+	box-sizing: border-box;
+}
+
+.subscribebtn {
+	width: 160px;
+	height: 50px;
+	background-color: var(--primary-text-color);
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	padding: 12px 46px;
+	/* box-sizing: border-box; */
+	border: none;
+	outline: none;
+	margin-left: -4px;
+}
+
+.subscribesection {
+	width: 510px;
+	margin-left: 600px;
 }
