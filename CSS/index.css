@@ -147,6 +147,7 @@
 }
 
 .cardimgsection {
+	/* position: re; */
 	display: inline-block;
 	margin-right: 22px;
 }
@@ -326,4 +327,112 @@
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
 	margin-bottom: 30px;
+}
+
+
+/* cards */
+
+
+.cards_cardssections{
+	margin-top: 120px;
+}
+
+.cards_card{
+	width: 350px;
+	display: inline-block;
+	border: 1px solid var(--secondary-text-color);
+	background-color: #FFFFFF;
+	margin-right: 48px;
+}
+
+.cards_lastcard{
+	margin-right: 0px;
+	float: right;
+}
+
+.cards_cardinfo{
+	margin-top: 20px;
+}
+
+.cards_cardname{
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+}
+
+.cards_cardprice{
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+
+}
+
+.cards_breakline{
+	border-bottom: 1px solid var(--secondary-text-color);
+	width: 310px;
+	margin: 10px 0 13px 0;
+}
+
+.cards_tag{
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+}
+
+.cards_tags{
+	margin-bottom: 20px;
+}
+
+.cards_tag1{
+	/* margin-left: 21px; */
+}
+.cards_tag2{
+	margin-left: 49px;
+}
+
+.cards_cart{
+	margin-left: 155px;
+}
+
+.cards_cardsecondpart{
+	margin-left: 20px;
+}
+
+.cards_cardprice2{
+	text-decoration: line-through;
+	font-size: 10px;
+	font-weight: 300;
+	color: var(--border-color);
+	letter-spacing: 0px;
+}
+
+.cards_cardimg{
+	position: relative;
+}
+
+.cards_offer{
+	position: absolute;
+	top: 20px;
+	left: 257px;
+	background-color: #222222;
+	width: 73px;
+	height: 30px;
+}
+
+.cards_offerinfo{
+	text-align: center;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	margin: 5px auto;
+}
+
+.cards_container::after{
+	content: "";
+	display: block;
+	clear: both;
 }
