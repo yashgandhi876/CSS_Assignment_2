@@ -107,6 +107,8 @@
 	color: var(--primary-text-color);
 	border: none;
 	height: 26px;
+	cursor: pointer;
+	outline: none;
 }
 
 .bannerbtnborder {
@@ -249,4 +251,79 @@
 	height: 2px;
 	position: relative;
 	top: 418px;
+}
+
+
+/* advt banner */
+
+.advtbanner{
+	margin-top: 120px;
+}
+
+.advtcontainer{
+	position: relative;
+}
+
+.advtimginfo{
+	position: absolute;
+	top: 96px;
+	left: 260px;
+}
+
+.advtbtnsection{
+	margin-top: 30px;
+}
+
+.sale{
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+}
+
+.off{
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+}
+
+.sectionone{
+	float: left;
+}
+
+.sectiontwo{
+	float: right;
+}
+
+.advtcontainer::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.sectiontwo{
+	position: relative;
+}
+
+.advtimginfo2{
+	position: absolute;
+	top: 96px;
+	left: 65px;
+
+}
+
+.sale2{
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+}
+
+.off2{
+	font-weight: 600;
+	font-family: 24px;
+	letter-spacing: 0px;
+	color: var(--primary-text-color);
+	margin-bottom: 30px;
 }
