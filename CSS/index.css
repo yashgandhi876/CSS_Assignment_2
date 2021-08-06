@@ -78,6 +78,7 @@
 .banner {
 	height: 717px;
 	padding-top: 96px;
+	overflow: hidden;
 }
 
 .bannerfirstpart {
@@ -122,13 +123,17 @@
 
 .bannerinfosection {
 	padding: 215px 0px;
-	width: 530px;
+	width: 550px;
+}
+
+.bannercontainer{
+	position: relative;
 }
 
 .bannerimgsection {
 	position: absolute;
-	top: 96px;
-	right: 0;
+	top:0px;
+	left: 570px;
 }
 
 /* categories */
@@ -189,9 +194,14 @@
 	width: 350px;
 	height: 450px;
 	background-color: var(--primary-text-color);
-	opacity: 0.8;
+	opacity: 1;
 	color: #ffffff;
 	margin-top: -33px;
+	z-index: 50;
+}
+
+.infoonimg:hover{
+	opacity: 0.8;
 }
 
 .imghead {
@@ -336,10 +346,10 @@
 
 .cards_card {
 	width: 350px;
-	display: inline-block;
+	float: left;
 	border: 1px solid var(--secondary-text-color);
 	background-color: #ffffff;
-	margin-right: 48px;
+	margin-right: 50px;
 }
 
 .cards_lastcard {
