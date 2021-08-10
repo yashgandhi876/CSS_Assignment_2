@@ -21,7 +21,9 @@
 		<header id="home" class="header">
 			<div class="container headercontainer">
 				<div class="logosection">
-					<img class="logo" src="./images/logo.png" alt="logo" />
+					<a href="#">
+						<img class="logo" src="./images/logo.png" alt="logo" />
+					</a>
 				</div>
 				<nav class="navsection">
 					<ul class="navbar">
@@ -48,7 +50,6 @@
 						</p>
 						<div>
 							<button class="bannerbtn">SHOP NOW</button>
-							<div class="bannerbtnborder"></div>
 						</div>
 					</div>
 					<div class="bannerimgsection">
@@ -71,7 +72,7 @@
 						<li class="navbaritems"><a class="catnavlinks navlinks" href="#">Fashion</a></li>
 					</ul>
 				</nav>
-				<div>
+				<div class="cats_cards_sec">
 					<div class="card">
 						<div class="cardimgsection firstcard">
 							<div class="imglabel">
@@ -143,28 +144,20 @@
 		<section class="advtbanner">
 			<div class="container advtcontainer">
 				<div class="sectionone">
-					<div class="advtimgsection">
-						<img src="./images/banner_bg_1.png" alt="banner background" />
-					</div>
 					<div class="advtimginfo">
 						<p class="sale">SUMMER SALE</p>
 						<h2 class="off">UPTO 70% OFF NOW</h2>
 						<div class="advtbtnsection">
 							<button class="bannerbtn advtbtn">SHOP NOW</button>
-							<div class="bannerbtnborder advtbtnline"></div>
 						</div>
 					</div>
 				</div>
 				<div class="sectiontwo">
-					<div class="advtimgsection2">
-						<img src="./images/banner_bg_2.png" alt="banner background" />
-					</div>
 					<div class="advtimginfo2">
 						<p class="sale2">NEW COLLECTION</p>
 						<h2 class="off2">TRENDING T-SHIRT</h2>
 						<div class="advtbtnsection2">
 							<button class="bannerbtn advtbtn">SHOP NOW</button>
-							<div class="bannerbtnborder advtbtnline"></div>
 						</div>
 					</div>
 				</div>
@@ -188,7 +181,7 @@
 						<div class="cards_tags">
 							<span class="cards_tag cards_tag1"> 1250 </span>
 							<span class="cards_tag cards_tag2"> 1250 </span>
-							<span class="cards_tag cards_cart"> ADD TO CART </span>
+							<a href="#"> <span class="cards_tag cards_cart"> ADD TO CART </span> </a>
 						</div>
 					</div>
 				</div>
@@ -209,13 +202,15 @@
 						<div class="cards_tags">
 							<span class="cards_tag cards_tag1"> 1250 </span>
 							<span class="cards_tag cards_tag2"> 1250 </span>
-							<span class="cards_tag cards_cart"> ADD TO CART </span>
+							<a href="#">
+								<span class="cards_tag cards_cart"> ADD TO CART </span>
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="cards_card cards_lastcard">
-					<div class="cards_cardimg">
+					<div class="cards_cardimg lastcard_cardimg">
 						<img src="./images/tile_img_3.png" alt="galary pic 1" />
 						<div class="cards_offer">
 							<p class="cards_offerinfo">SALE</p>
@@ -230,7 +225,9 @@
 						<div class="cards_tags">
 							<span class="cards_tag cards_tag1"> 1250 </span>
 							<span class="cards_tag cards_tag2"> 1250 </span>
-							<span class="cards_tag cards_cart"> ADD TO CART </span>
+							<a href="#">
+								<span class="cards_tag cards_cart"> ADD TO CART </span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -241,7 +238,10 @@
 
 		<section id="contact" class="newsletter">
 			<div class="content">
-				<div class="container">
+				<div class="container newsletter_container">
+					<div class="newletterimgsection">
+						<img src="./images/emailer_banner_img.png" alt="" />
+					</div>
 					<div class="subscribesection">
 						<h2 class="subscribeheading">SUBSCRIBE <span class="now"> NOW </span></h2>
 						<p class="subscribeinfo">
@@ -256,11 +256,6 @@
 							/>
 							<button class="subscribebtn">Subscribe</button>
 						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="newletterimgsection">
-						<img src="./images/emailer_banner_img.png" alt="" />
 					</div>
 				</div>
 			</div>
@@ -281,7 +276,7 @@
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 							been the industry.
 						</p>
-						<p class="article_readmore">READ MORE</p>
+						<a href="#" class="readmorelinks"> <p class="article_readmore">Read more</p></a>
 					</div>
 				</div>
 
@@ -296,7 +291,7 @@
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 							been the industry.
 						</p>
-						<p class="article_readmore">READ MORE</p>
+						<a href="#" class="readmorelinks"><p class="article_readmore">Read more</p></a>
 					</div>
 				</div>
 
@@ -311,7 +306,7 @@
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 							been the industry.
 						</p>
-						<p class="article_readmore">READ MORE</p>
+						<a href="#" class="readmorelinks"><p class="article_readmore">Read more</p></a>
 					</div>
 				</div>
 			</div>
@@ -393,7 +388,7 @@
 
 				<div class="footerlinkssection">
 					<ul class="footer_ul">
-						<li class="listitem footerlistitem"><a class="link footerlink" href="#home">Home</a></li>
+						<li class="listitem footerlistitem"><a class="link footerlink" href="#">Home</a></li>
 						<li class="listitem footerlistitem"><a class="link footerlink" href="#product">Product</a></li>
 						<li class="listitem footerlistitem"><a class="link footerlink" href="#blog">Blog</a></li>
 						<li class="listitem footerlistitem"><a class="link footerlink" href="#contact">Contact</a></li>
