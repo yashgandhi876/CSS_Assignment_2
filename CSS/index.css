@@ -28,6 +28,10 @@
 	margin: auto;
 }
 
+.logolink{
+	display: block;
+}
+
 .logosection {
 	float: left;
 	margin: 16px auto;
@@ -97,6 +101,7 @@
 	font-size: 50px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .bannerinfo {
@@ -105,6 +110,7 @@
 	font-size: 16px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .bannerbtn {
@@ -116,12 +122,12 @@
 	height: 26px;
 	cursor: pointer;
 	outline: none;
+	text-align: left;
 }
 
 .bannerbtn::after {
 	content:"";
 	display: block;
-	width: 96px;
 	height: 10px;
 	background-color: var(--primary-red-color);
 	opacity: 0.3;
@@ -140,7 +146,11 @@
 .bannerimgsection {
 	position: absolute;
 	top:0px;
-	left: 570px;
+	right: -190px;
+}
+
+.bannerimgsection img{
+	display: block;
 }
 
 /* categories */
@@ -168,7 +178,6 @@
 .cardimgsection {
 	position: relative;
 	display: inline-block;
-	margin-right: 22px;
 }
 
 .lastcard {
@@ -180,7 +189,7 @@
 }
 
 .cardinfo {
-	margin-left: 20px;
+	padding: 20px;
 }
 
 .firstcard {
@@ -205,22 +214,21 @@
 .infoonimg {
 	width: 350px;
 	height: 450px;
-	background-color: var(--primary-text-color);
-	opacity: 0;
-	color: #ffffff;
+	background-color: rgba(34, 34, 34, 0);
+	color: transparent;
 	z-index: 50;
-
 }
 
 .infoonimg:hover{
-	opacity: 0.8;
+	background-color: rgba(34, 34, 34, 0.8);
+	 filter: grayscale(100%);
+	color: #ffffff;
 }
 
 .imghead {
 	font-weight: 500;
 	font-size: 24px;
 	letter-spacing: 0px;
-	color: #ffffff;
 	padding: 20px;
 }
 
@@ -228,7 +236,6 @@
 	font-weight: 300;
 	font-size: 16px;
 	letter-spacing: 0px;
-	color: #ffffff;
 	padding: 20px;
 }
 
@@ -237,7 +244,7 @@
 	font-size: 24px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
-	margin-top: 20px;
+	text-align: left;
 }
 
 .cardprice {
@@ -245,15 +252,21 @@
 	font-weight: 300;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .catnavlinks {
 	font-size: 18px;
+	text-align: left;
+}
+
+.wrapperdiv{
+	z-index: 10;
 }
 
 .imglabel {
 	position: absolute;
-	bottom: 0px;
+	bottom: 2px;
 	left: 20px;
 	background-color: #ffffff;
 	width: 73px;
@@ -301,6 +314,7 @@
 	font-size: 16px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .off {
@@ -308,6 +322,7 @@
 	font-weight: 600;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .sectionone {
@@ -374,15 +389,12 @@
 	float: left;
 }
 
-.cards_cardinfo {
-	margin-top: 20px;
-}
-
 .cards_cardname {
 	font-weight: 500;
 	font-size: 24px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .cards_cardprice {
@@ -390,6 +402,7 @@
 	font-weight: 300;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .cards_breakline {
@@ -403,27 +416,38 @@
 	font-weight: 300;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	float: left;
+
 }
 
-.cards_tags {
-	/* margin-bottom: 20px; */
+.cards_tags::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
-.cards_tag1 {
-	/* margin-left: 21px; */
-}
 .cards_tag2 {
 	margin-left: 49px;
 }
 
 .cards_cart {
 	float: right;
-	margin-top: 10px;
 	text-align: center;
 }
 
+.cards_cart_a{
+	text-decoration: none;
+}
+
+.cards_cart_a::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
 .cards_cardsecondpart {
-	padding: 20px;
+	padding: 19px;
 }
 
 .cards_cardprice2 {
@@ -441,6 +465,9 @@
 
 .cards_cardimg img{
 	width: 348px;
+	display: block;
+	/* margin: 0px;
+	padding: 0px; */
 }
 
 .lastcard_cardimg img{
@@ -484,9 +511,13 @@
 }
 
 .newletterimgsection {
-	margin-left: 155px;
 	position: absolute;
+	left: 100px;
 	top: -186px;
+}
+
+.newletterimgsection img{
+	display: block;
 }
 
 .content {
@@ -556,6 +587,10 @@
 	outline: none;
 }
 
+.newsletter_container{
+	position: relative;
+}
+
 .newsletter_container::after{
 	content: "";
 	display: block;
@@ -581,8 +616,16 @@
 	margin-right: 60px;
 }
 
+.article_infosection{
+	padding: 30px 0px;
+}
+
 .article_imgsection{
 	position: relative;
+}
+
+.article_imgsection img{
+	display: block;
 }
 
 .article_border{
@@ -610,7 +653,7 @@
 	font-size: 18px;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
-	padding-top: 30px;
+	text-align: left;
 }
 
 .article_info{
@@ -619,6 +662,7 @@
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
 	padding-top: 20px;
+	text-align: left;
 }
 
 .article_readmore{
@@ -628,6 +672,7 @@
 	color: var(--primary-text-color);
 	padding-top: 30px;
 	text-transform: uppercase;
+	text-align: left;
 
 }
 
@@ -685,6 +730,7 @@
 	font-weight: 300;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 
@@ -719,6 +765,7 @@
 	font-weight: 300;
 	letter-spacing: 0px;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 
 .footerlink:hover{
