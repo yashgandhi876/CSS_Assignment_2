@@ -212,7 +212,7 @@
 .firstcard {
 	width: 350px;
 	/* border-bottom: 2px solid var(--primary-text-color); */
-	height: 450px;
+	/* height: 450px; */
 }
 
 .secondcard {
@@ -288,6 +288,7 @@
 	background-color: #ffffff;
 	width: 73px;
 	height: 30px;
+
 }
 
 .label {
