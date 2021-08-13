@@ -18,7 +18,7 @@
 .header {
 	height: 96px;
 	position: fixed;
-	z-index: 20;
+	z-index: 100;
 	background-color: #ffffff;
 	width: 100%;
 }
@@ -123,6 +123,7 @@
 	cursor: pointer;
 	outline: none;
 	text-align: left;
+	position: relative;
 }
 
 .bannerbtn::after {
@@ -131,7 +132,10 @@
 	height: 10px;
 	background-color: var(--primary-red-color);
 	opacity: 0.3;
-	margin: -10px 0 0 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
 }
 
 .bannerinfosection {
@@ -159,6 +163,19 @@
 	content: "";
 	display: block;
 	clear: both;
+}
+
+.cats_cardimgsection::after{
+	content: "";
+	display: block;
+	height: 2px;
+	background-color: var(--primary-text-color);
+	bottom: 0px;
+	left: 0px;
+}
+
+.cats_cardimgsection img{
+ display: block;
 }
 
 .catsection {
@@ -193,21 +210,19 @@
 }
 
 .firstcard {
-	background-image: url("../images/product_01.png");
 	width: 350px;
+	/* border-bottom: 2px solid var(--primary-text-color); */
 	height: 450px;
 }
 
 .secondcard {
-	background-image: url("../images/product_02.png");
 	width: 350px;
-	height: 450px;
+	/* height: 450px; */
 }
 
 .lastcardimg {
-	background-image: url("../images/product_03.png");
 	width: 350px;
-	height: 450px;
+	/* height: 450px; */
 	margin-right: 0px;
 }
 
@@ -217,11 +232,13 @@
 	background-color: rgba(34, 34, 34, 0);
 	color: transparent;
 	z-index: 50;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-.infoonimg:hover{
+.card:hover .infoonimg{
 	background-color: rgba(34, 34, 34, 0.8);
-	 filter: grayscale(100%);
 	color: #ffffff;
 }
 
@@ -282,14 +299,6 @@
 	padding: 6px 0px;
 }
 
-.cardline {
-	width: 350px;
-	background-color: var(--primary-text-color);
-	height: 2px;
-	position: absolute;
-	bottom: 0px;
-}
-
 /* advt banner */
 
 .advtbanner {
@@ -329,14 +338,12 @@
 	float: left;
 	background-image: url("../images/banner_bg_1.png");
 	width: 555px;
-	height: 300px;
 }
 
 .sectiontwo {
 	float: right;
 	background-image: url("../images/banner_bg_2.png");
 	width: 555px;
-	height: 300px;
 }
 
 .advtcontainer::after {
@@ -513,7 +520,7 @@
 .newletterimgsection {
 	position: absolute;
 	left: 100px;
-	top: -186px;
+	bottom: 0;
 }
 
 .newletterimgsection img{
@@ -624,17 +631,19 @@
 	position: relative;
 }
 
-.article_imgsection img{
+.article_imgsection::before{
+	content:"";
 	display: block;
+	height: 100%;
+	background-color: var(--primary-text-color);
+	width: 2px;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
-.article_border{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 2px;
-	height: 230px;
-	background-color: var(--primary-text-color);
+.article_imgsection img{
+	display: block;
 }
 
 .lastarticle_card{
@@ -739,7 +748,10 @@
 .footer{
 	margin-top: 60px;
 	background-color: var(--secondary-color);
-	height: 122px;
+}
+
+.footer_container{
+	padding: 40px 0px;
 }
 
 .footer_container::after{
@@ -749,8 +761,10 @@
 }
 
 .copyright{
-	margin: 45px auto;
+	margin: auto;
 	float: left;
+	text-align: center;
+	    padding: 5px 0px;
 }
 
 .copy{
@@ -776,15 +790,12 @@
 	float: right;
 }
 
-.footer_container::after{
-	content: "";
-	display: block;
-	clear: both;
-}
+
+
 
 .footerlistitem{
 	float: left;
-	margin: 43px 15px ;
+	margin: 0px 15px ;
 }
 
 .footer_ul::after{
